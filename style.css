@@ -192,21 +192,147 @@ a:hover {
 }
 
 /* ========== 响应式设计 ========== */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 0;
+        margin-bottom: 25px;
+    }
+
     .nav-container {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .name a {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li a {
+        font-size: 15px;
     }
 
     .content {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     .profile-section {
         text-align: center;
+        grid-column: 1;
     }
 
     .profile-img {
-        width: 200px;
+        width: 160px;
+    }
+
+    .bio-section {
+        grid-column: 1;
+    }
+
+    .bio-section p {
+        font-size: 15px;
+    }
+
+    .bio-section h3 {
+        font-size: 17px;
+        margin: 20px 0 8px 0;
+    }
+
+    .page-content h2 {
+        font-size: 20px;
+        margin: 25px 0 15px 0;
+    }
+
+    .page-content h3 {
+        font-size: 17px;
+    }
+
+    .paper {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    .paper-title {
+        font-size: 15px;
+    }
+
+    .paper-authors,
+    .paper-journal,
+    .paper-links a {
+        font-size: 13px;
+    }
+}
+
+/* 超小屏幕（手机竖屏） */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .name a {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .profile-img {
+        width: 140px;
+    }
+
+    .bio-section p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .bio-section h3 {
+        font-size: 16px;
+    }
+
+    .page-content h2 {
+        font-size: 18px;
+    }
+
+    .page-content h3 {
+        font-size: 16px;
+    }
+
+    .page-content h4 {
+        font-size: 15px;
+    }
+
+    .page-content li {
+        font-size: 14px;
+    }
+
+    .paper {
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+    }
+
+    .paper-title {
+        font-size: 14px;
+    }
+
+    .paper-authors,
+    .paper-journal,
+    .paper-links a {
+        font-size: 12px;
     }
 }
